@@ -44,7 +44,7 @@ const Features = () => (
             desc: 'Stake tokens for governance & revenue share.',
             icon: '💎'
           },
-        ].map(({ title, desc, icon }) => (
+        ].map(({ title, desc }) => (
           <div key={title} className="group cursor-pointer">
             <div className="bg-black rounded-2xl overflow-hidden hover:scale-105 transition-all duration-300 hover:shadow-2xl">
               <div className="h-40 bg-gray-800 relative overflow-hidden flex items-center justify-center" style={{

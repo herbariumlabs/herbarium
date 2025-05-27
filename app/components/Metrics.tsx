@@ -16,7 +16,7 @@ const Metrics = () => {
             Launch Metrics
           </h2>
           <p className="text-xl text-black/80 mb-12 max-w-2xl mx-auto">
-            Real impact, measurable results. See how we're transforming agriculture today.
+            Real impact, measurable results. See how we&apos;re transforming agriculture today.
           </p>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">

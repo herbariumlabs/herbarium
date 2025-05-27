@@ -1,8 +1,21 @@
 import React from 'react';
 import { Leaf, Globe } from 'lucide-react';
 
+type RoadmapItem = {
+  quarter: string;
+  items: string[];
+  status: 'current' | 'upcoming' | 'future';
+};
+
+type RoadmapSectionProps = {
+  title: string;
+  roadmap: RoadmapItem[];
+  icon: React.ElementType;
+  isWeb3?: boolean;
+};
+
 const Roadmap = () => {
-  const web2Roadmap = [
+  const web2Roadmap: RoadmapItem[] = [
     { 
       quarter: 'Q2 2025', 
       items: [
@@ -41,7 +54,7 @@ const Roadmap = () => {
     },
   ];
 
-  const web3Roadmap = [
+  const web3Roadmap: RoadmapItem[] = [
     { 
       quarter: 'Q2 2025', 
       items: [
@@ -84,7 +97,7 @@ const Roadmap = () => {
     },
   ];
 
-  const RoadmapSection = ({ title, roadmap, icon: Icon, isWeb3 = false }) => (
+  const RoadmapSection: React.FC<RoadmapSectionProps> = ({ title, roadmap, icon: Icon }) => (
     <div className="flex-1">
       <div className="text-center mb-8">
         <div className="flex items-center justify-center mb-4">
@@ -96,7 +109,7 @@ const Roadmap = () => {
       <div className="relative">
         <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-black opacity-20"></div>
         
-        {roadmap.map(({ quarter, items, status }, index) => (
+        {roadmap.map(({ quarter, items, status }) => (
           <div key={quarter} className="relative mb-8">
             <div className={`absolute left-6 transform -translate-x-1/2 w-4 h-4 rounded-full border-4 ${
               status === 'current' ? 'bg-black border-white shadow-lg' : 

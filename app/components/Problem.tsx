@@ -35,7 +35,7 @@ const Problem = () => (
           </div>
           <div className="space-y-3">
             <p className="text-gray-300">Lack of transparent origin data leads to unfair pricing</p>
-            <p className="text-gray-300">Unverifiable "organic" claims undermine trust</p>
+            <p className="text-gray-300">Unverifiable &quot;organic&quot; claims undermine trust</p>
             <p className="text-gray-300">Farmers miss out on premium due to poor brand identity</p>
           </div>
         </div>

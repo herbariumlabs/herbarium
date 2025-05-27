@@ -11,7 +11,7 @@ const Newsletter: React.FC = () => {
             </h2>
             <p className="text-lg">
               Get our lightpaper for a full breakdown of how Herbarium Labs is built, 
-              where we're going, and how you can be part of it.
+              where we&apos;re going, and how you can be part of it.
             </p>
           </div>
           <div className="md:w-2/5">
