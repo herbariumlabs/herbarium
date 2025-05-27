@@ -16,7 +16,7 @@ const Hero = () => {
               to increase yields and value for crops through early pest detection and transparent food traceability.
             </p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-              <Link href="#waitlist" className="bg-herbarium-green text-herbarium-dark font-medium px-6 py-3 hover:opacity-90 transition-opacity text-center border rounded-full" style={{ backgroundColor: '#87EEB1', color: '#000' }}>
+              <Link href="#cta" className="bg-herbarium-green text-herbarium-dark font-medium px-6 py-3 hover:opacity-90 transition-opacity text-center border rounded-full" style={{ backgroundColor: '#87EEB1', color: '#000' }}>
                 Join Waitlist
               </Link>
               {/* <Link href="https://www.canva.com/design/DAGnmtRkm4E/Tt9caosSsnU3tBp5BXZwIQ/edit" target='_blank' className="bg-transparent border text-white font-medium px-6 py-3 border rounded-full hover:bg-herbarium-green hover:text-herbarium-dark transition-colors text-center" style={{ color: '#B7F4D7', backgroundColor: '#000000', borderColor: '#87EEB1'}}>
